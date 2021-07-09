@@ -1,4 +1,4 @@
-{% set version = '0.1.2' %}
+{% set version = "0.1.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/maxnet_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/maxnet/maxnet_{{ version }}.tar.gz
-  sha256: dfa02ca1031b369415d8b16863ca5fd115c7bf96b1f8fc24f91719b017f5cce5
+  sha256: fd21e5ecf3c1ac00ef1bbe79fab4cdd62789e0c4c45f126f1b64bda667238216
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -39,14 +39,11 @@ test:
 about:
   home: https://github.com/mrmaxent/maxnet
   license: MIT
-  summary: Procedures to fit species distributions models from occurrence records and environmental
-    variables, using 'glmnet' for model fitting. Model structure is the same as for
-    the 'Maxent' Java package, version 3.4.0, with the same feature types and regularization
-    options.  See the 'Maxent' website <http://biodiversityinformatics.amnh.org/open_source/maxent>
+  summary: Procedures to fit species distributions models from occurrence records and environmental variables, using 'glmnet' for model fitting. Model structure is the same as for the 'Maxent' Java package, version 3.4.0, with the same feature types and regularization options.  See the 'Maxent' website <http://biodiversityinformatics.amnh.org/open_source/maxent>
     for more details.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
