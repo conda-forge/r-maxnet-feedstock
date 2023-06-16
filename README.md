@@ -1,11 +1,11 @@
-About r-maxnet
-==============
+About r-maxnet-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-maxnet-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/mrmaxent/maxnet
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-maxnet-feedstock/blob/main/LICENSE.txt)
 
 Summary: Procedures to fit species distributions models from occurrence records and environmental variables, using 'glmnet' for model fitting. Model structure is the same as for the 'Maxent' Java package, version 3.4.0, with the same feature types and regularization options.  See the 'Maxent' website <http://biodiversityinformatics.amnh.org/open_source/maxent> for more details.
 
