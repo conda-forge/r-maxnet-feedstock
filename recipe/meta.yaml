@@ -1,6 +1,5 @@
 {% set version = "0.1.4" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-maxnet
@@ -13,8 +12,7 @@ source:
   sha256: fd21e5ecf3c1ac00ef1bbe79fab4cdd62789e0c4c45f126f1b64bda667238216
 
 build:
-  merge_build_host: true  # [win]
-  number: 2
+  number: 3
   noarch: generic
   rpaths:
     - lib/R/lib/
